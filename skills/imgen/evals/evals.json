@@ -1,0 +1,39 @@
+{
+  "skill_name": "imgen",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Generate an image of a cute crab-shaped robot vacuum cleaner on a wooden floor, save it to crab_vacuum.png",
+      "expected_output": "A valid PNG image file named crab_vacuum.png depicting a crab-shaped robot vacuum cleaner on a wooden floor",
+      "files": [],
+      "expectations": [
+        "A file named crab_vacuum.png exists in the run's outputs directory",
+        "crab_vacuum.png is a valid PNG image larger than 50 KB",
+        "The image depicts a crab-shaped robot vacuum cleaner"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Edit the file test_cat.png and replace the orange tabby cat with a white husky dog sitting in the same spot. Keep the windowsill, plants, curtains and lighting unchanged. Save the result as husky.png",
+      "expected_output": "A valid PNG file husky.png showing a white husky dog in place of the orange cat, with the windowsill scene preserved",
+      "files": ["evals/files/test_cat.png"],
+      "expectations": [
+        "A file named husky.png exists in the run's outputs directory",
+        "husky.png is a valid PNG image larger than 50 KB",
+        "husky.png is not a byte-identical copy of the input test_cat.png",
+        "The edited image contains a white/light-colored dog and no orange cat"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make a 2048x2048 high quality poster of a cyberpunk city at night with neon signs",
+      "expected_output": "At least one generated PNG image file (auto-named) depicting a cyberpunk city at night with neon signs",
+      "files": [],
+      "expectations": [
+        "At least one PNG image file was created in the run's outputs directory",
+        "The image file is a valid PNG larger than 50 KB",
+        "The image depicts a cyberpunk city at night with neon signs"
+      ]
+    }
+  ]
+}
