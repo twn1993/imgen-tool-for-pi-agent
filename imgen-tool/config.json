@@ -1,0 +1,14 @@
+{
+  "base_url": "",
+  "api_key": "",
+  "api_keys": [
+    "",
+    ""
+  ],
+  "model": "gpt-image-2",
+  "default_size": "auto",
+  "default_quality": "auto",
+  "default_format": "png",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+  "timeout_seconds": 300
+}
